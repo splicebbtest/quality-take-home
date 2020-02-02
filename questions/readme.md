@@ -7,7 +7,7 @@ Q: What is an excellent bug report you created at a previous company which was o
 
 A:
 
-** So, for privacy reasons I can not show reports for software I have worked on at my other jobs. 
+So, for privacy reasons I can not show reports for software I have worked on at my other jobs. 
 
 However, I can point you to some dialogue I have had with FreeBSD developers and enthusiasts, which I think illustrates some of the detail oriented extrapolation you are seeking. 
 
@@ -15,19 +15,21 @@ For context, this issue had to do with compiling FreeBSD images for a Raspberry 
 
 In this report, I clearly state the issue I am having, the platform I am on, the tools I am trying to use, and the output of the error.
 
-The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue: **
+The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue: 
 
-`Hi everyone,
 
-I have installed the most recent image of 12.1 to my sdcard and I have an
+> Hi everyone,
+
+> I have installed the most recent image of 12.1 to my sdcard and I have an
 identical image running under qemu. The release revision is @ 352868. I
 have setup distcc successfully and compilation works, but it fails at this
 point:
 
-To be clear, I am compiling directly on the Pi itself and offloading jobs
+> To be clear, I am compiling directly on the Pi itself and offloading jobs
 to an arm qemu instance on a faster computer. As far as I know the images
 running are the same.
 
+```
 /usr/src/gnu/lib/libgcc/../../../contrib/gcc/unwind-dw2.c:1396:3: error:
 cannot compile this __builtin_init_dwarf_reg_size_table yet
   __builtin_init_dwarf_reg_size_table (dwarf_reg_size_table);
@@ -73,12 +75,13 @@ make: stopped in /usr/src
 1 error
 
 make: stopped in /usr/src
+```
 
-It seems a similar problem happened for someone in this StackOverflow
+> It seems a similar problem happened for someone in this StackOverflow
 thread,
 https://stackoverflow.com/questions/53786496/clang-error-cannot-compile-builtin-function-yet.
 However this person was compiling the Linux kernel and it looks like they
-used GCC to get around the issue, which I don't think I can do here?`
+used GCC to get around the issue, which I don't think I can do here?
 
 **Additionally, I have submitted small patches to some projects I am interested in. https://reviews.freebsd.org/rP491573 is an example of a patch submitted on my behalf by a port maintainer on FreeBSD. I reached out to the maintainer directly and provided him the patch. This patch fixed a run time error in the quarterly version of a package used for remote streaming. I tracked down the issue by following threads in the upstream's git repo.** 
 
