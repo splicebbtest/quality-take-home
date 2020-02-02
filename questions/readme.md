@@ -7,15 +7,15 @@ Q: What is an excellent bug report you created at a previous company which was o
 
 A:
 
-So, for privacy reasons I can not show reports for software I have worked on at my other jobs. 
+**So, for privacy reasons I can not show reports for software I have worked on at my other jobs.** 
 
-However, I can point you to some dialogue I have had with FreeBSD developers and enthusiasts, which I think illustrates some of the detail oriented extrapolation you are seeking. 
+**However, I can point you to some dialogue I have had with FreeBSD developers and enthusiasts, which I think illustrates some of the detail oriented extrapolation you are seeking.**
 
-For context, this issue had to do with compiling FreeBSD images for a Raspberry Pi. Unfortunately the Raspberry Pi platform is not considered tier 1, which means you can not update the operating system directly on the device itself. Instead, you have to compile your own image either using a build automation tool called Crochet, which through cross compiling magic produces an image for an embedded device of your choice, or you can set up your own cross compiling tool chain and do it yourself, which is what I was attempting to do. Basically using a tool called distcc, which distributes compilation jobs across a network, and running my Raspberry Pi in conjunction with a virtualized arm image on a much faster device, I was attempting to do a kernel upgrade.
+**For context, this issue had to do with compiling FreeBSD images for a Raspberry Pi. Unfortunately the Raspberry Pi platform is not considered tier 1, which means you can not update the operating system directly on the device itself. Instead, you have to compile your own image either using a build automation tool called Crochet, which through cross compiling magic produces an image for an embedded device of your choice, or you can set up your own cross compiling tool chain and do it yourself, which is what I was attempting to do. Basically using a tool called distcc, which distributes compilation jobs across a network, and running my Raspberry Pi in conjunction with a virtualized arm image on a much faster device, I was attempting to do a kernel upgrade.**
 
-In this report, I clearly state the issue I am having, the platform I am on, the tools I am trying to use, and the output of the error.
+**In this report, I clearly state the issue I am having, the platform I am on, the tools I am trying to use, and the output of the error.**
 
-The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue: 
+**The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue:**
 
 
 > Hi everyone,
