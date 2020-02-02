@@ -6,7 +6,7 @@
 
 *As a user, I am unable to delete my account until I have entered my user name in the user name field shown to me in the warning modal.*
 
-**I think this can be improved. Currently, if I enter any text what so ever, the delete button becomes clickable. An error does show up in a alert flash next to the modal, or underneath of it depending on the screen size, when the user enters any text,  but this is an unecessary condition. The button should only become active if, and only if, the user has entered their exact username.
+**I think this can be improved. Currently, if I enter any text what so ever, the delete button becomes clickable. An error does show up in a alert flash next to the modal, or underneath of it depending on the screen size, when the user enters any text,  but this is an unecessary condition. The button should only become active if, and only if, the user has entered their exact username.**
 
 # Typo exists in alert flash message when creating a collection with a duplicate name.
 
