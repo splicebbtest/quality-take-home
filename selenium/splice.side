@@ -1,0 +1,264 @@
+{
+  "id": "6494c8ed-ccd1-4fb7-b0c3-ca7ba3c423ef",
+  "version": "2.0",
+  "name": "splice",
+  "url": "https://splice.com/",
+  "tests": [{
+    "id": "15a55c7a-2fbf-493c-9630-8281a418d7c6",
+    "name": "Typo exists in alert flash message when creating a collection with a duplicate name.",
+    "commands": [{
+      "id": "aa38f565-a294-49e3-8c7d-3d4318caca90",
+      "comment": "",
+      "command": "open",
+      "target": "/studio",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef77ce0-b439-459e-a65d-5914675eed7f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//button[contains(.,'+')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "527eb796-9493-42ee-99d0-acc4825af765",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'+')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "964d0146-f49f-4c3d-b6f8-be16f96d0436",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='setName']",
+      "targets": [
+        ["name=setName", "name"],
+        ["css=.global-sidebar__input-text", "css:finder"],
+        ["xpath=//input[@name='setName']", "xpath:attributes"],
+        ["xpath=//form[@id='add-set-form']/input", "xpath:idRelative"],
+        ["xpath=//ul[2]/div[2]/form/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "660e5a85-9729-4249-8e46-79c53cff1428",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.global-sidebar__submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='add-set-form']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f404c9ac-f9b7-4fdd-a75b-cf82fcd5d545",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//button[contains(.,'+')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "811169b7-3292-4e40-b513-1a0abfd9ba4f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'+')]",
+      "targets": [
+        ["css=.studio-sidebar__right-element--collections", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dadeb39-b251-43e0-94da-b7114cce6fff",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='setName']",
+      "targets": [
+        ["name=setName", "name"],
+        ["css=.global-sidebar__input-text", "css:finder"],
+        ["xpath=//input[@name='setName']", "xpath:attributes"],
+        ["xpath=//form[@id='add-set-form']/input", "xpath:idRelative"],
+        ["xpath=//ul[2]/div[2]/form/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "f43fee2c-fce6-497b-bc86-fe31568f3dc9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.global-sidebar__submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='add-set-form']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37647399-f808-4ba9-a7b6-bd22e37724a0",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "//html/body/app-root/app-flash-message/div[contains(.,'settest')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4cc9ef7d-82bb-471b-891b-18254faf1f07",
+    "name": "Account deletion blocked until the user enters text in the username field.",
+    "commands": [{
+      "id": "d31f9dcb-5db6-4b15-abe0-dc88ebb5930c",
+      "comment": "",
+      "command": "open",
+      "target": "/profile/settings",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aaae7e1-7faa-4396-aa63-d01fcce180cf",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Delete account",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "59282376-f29e-4140-95dc-98d18dde838b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete account",
+      "targets": [
+        ["linkText=Delete account", "linkText"],
+        ["css=.delete-account", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete account')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '')])[39]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b91ec8af-6ff8-4e28-88fc-a13f05cfb054",
+      "comment": "",
+      "command": "click",
+      "target": "id=bb-confirm-form-input",
+      "targets": [
+        ["id=bb-confirm-form-input", "id"],
+        ["name=username", "name"],
+        ["css=#bb-confirm-form-input", "css:finder"],
+        ["xpath=//input[@id='bb-confirm-form-input']", "xpath:attributes"],
+        ["xpath=//form[@id='confirm-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3370926-b40f-4066-b70a-a5efd91fcf71",
+      "comment": "",
+      "command": "type",
+      "target": "id=bb-confirm-form-input",
+      "targets": [
+        ["id=bb-confirm-form-input", "id"],
+        ["name=username", "name"],
+        ["css=#bb-confirm-form-input", "css:finder"],
+        ["xpath=//input[@id='bb-confirm-form-input']", "xpath:attributes"],
+        ["xpath=//form[@id='confirm-form']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Beastwick"
+    }, {
+      "id": "64729902-aa81-43dd-97ce-b95f6853e5bc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//html/body/div[3]/div/div/div[2]/form/div/button[1]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "70e743a6-2ed8-4b3e-b59d-7c9a9fd545cf",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//html/body/div[3]/div/div/div[2]/form/div/button[1]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f203c320-face-4efe-aee8-e38a7ac0b992",
+    "name": "A top level notification parent toggle off, should toggle all their children off.",
+    "commands": [{
+      "id": "5f7b0012-0cbb-41a4-8bb6-ff463703661d",
+      "comment": "",
+      "command": "open",
+      "target": "/profile/notifications",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "154ca3b3-6b14-40c4-9713-74578cec36ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.master-subscription-group:nth-child(1) > .master-subscription-heading .ng-pristine",
+      "targets": [
+        ["css=.master-subscription-group:nth-child(1) > .master-subscription-heading .ng-pristine", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "384b5dfb-f67f-4757-be9a-e38b90f1b996",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[1]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94fc8aae-68d8-44ca-892e-a227e9266368",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[2]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f2f27ba-1169-4d81-b13d-678ea0176968",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[3]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb0f551b-0914-4524-a6bc-76c6432e4ae3",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[4]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b1c5390-7885-4bd5-a308-c86fd4f73f95",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[5]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "372328e2-fff7-466d-add5-0f752abd45da",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[6]/label/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5767ef5e-e16f-434c-a741-a47ba5ec39f9",
+      "comment": "",
+      "command": "assertNotChecked",
+      "target": "xpath=//html/body/app-root/div[1]/div/ui-view/div[2]/div/div/div/form/div[1]/div[7]/label/input",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "01b058f6-d171-4e67-ae60-f1ed8c8c4545",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["15a55c7a-2fbf-493c-9630-8281a418d7c6"]
+  }],
+  "urls": ["https://splice.com/", "https://splice.com/profile/settings"],
+  "plugins": []
+}
