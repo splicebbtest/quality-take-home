@@ -1,4 +1,4 @@
-# Questions
+Questions
 
 ## Bug Report!
 
@@ -7,7 +7,7 @@ Q: What is an excellent bug report you created at a previous company which was o
 
 A:
 
-**So, for privacy reasons I can not show reports for software I have worked on at my other jobs. 
+** So, for privacy reasons I can not show reports for software I have worked on at my other jobs. 
 
 However, I can point you to some dialogue I have had with FreeBSD developers and enthusiasts, which I think illustrates some of the detail oriented extrapolation you are seeking. 
 
@@ -15,7 +15,7 @@ For context, this issue had to do with compiling FreeBSD images for a Raspberry 
 
 In this report, I clearly state the issue I am having, the platform I am on, the tools I am trying to use, and the output of the error.
 
-The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue:**
+The error I was hitting was something in the libgcc toolchain, which meant I was in over my head, which is why I sought advice from more experienced users. Here is a detailed report of my issue: **
 
 `Hi everyone,
 
